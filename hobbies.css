@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-size: cover;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.247);
+    backdrop-filter: blur(2px);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 700px;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+nav li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+#logo{
+    margin-left: 15px;
+}
+
+main{
+    margin-top: 40px;
+    display: grid;
+    justify-items: center;
+}
+
+.hobbiesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.item {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+    flex: 0 0 calc(33.333% - 20px);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+div.item:hover {
+    border: 1px solid #777;
+    scale: 1.05;
+}
+
+div.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.active{
+    background: -webkit-linear-gradient(#ffae00,#ffc400, #ff0000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.recipeContainer{
+    margin-top: 10px;
+}
+
+.recipeContainer .headerOne, .headerTwo{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.requirements, .instructions{
+    margin-left: 30px;
+    font-size: 18px;
+}

@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+:root {
+  --darkest-blue: #1a237e;
+  --darker-blue: #283593;
+  --dark-blue: #303f9f;
+  --medium-blue: #3949ab;
+  --light-blue: #3f51b5;
+  --lighter-blue: #5c6bc0;
+  --lightest-blue: #9fa8da;
+  --white: #ffffff;
+  --black: #0e1442;
+  --orange: #ffb300;
+  --yellow: #fdd835;
+  --dark-pink: #ad1457;
+  --light-pink: #d81b60;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    cursor: default;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.247);
+    backdrop-filter: blur(2px);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 700px;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+#logo{
+    margin-left: 15px;
+}
+
+.active{
+  background: -webkit-linear-gradient(#ffae00,#ffc400, #ff0000);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+  transition-duration: 0.3s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h3 {
+  color: var(--orange);
+  margin: 10px 0;
+  text-transform: lowercase;
+  font-size: 1.25em;
+}
+
+.resume {
+  width: 960px;
+  background: var(--darkest-blue);
+  color: var(--white);
+  margin: 20px auto;
+  box-shadow: 10px 10px var(--black);
+  position: relative;
+  display: flex;
+}
+  
+  .resume .base .follow .box i::before {
+    transition-duration: 0.3s;
+  }
+  
+  .resume .base .follow .box i.fa::before {
+    display: block;
+  }
+  
+  .resume .func {
+    width: 100%;
+    padding: 15px 30px;
+  }
+
+  .resume .func .githubLink{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7px;
+  }
+
+  .resume .func .githubLink a{
+    color: var(--dark-pink);
+    text-decoration: none;
+    font-size: 18px;
+    background-color: var(--white);
+    width: 100px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .resume .func:hover > div {
+    transition-duration: 0.5s;
+  }
+  
+  .resume .func:hover > div:hover h3 i {
+    transform: scale(1.25);
+  }
+  
+  .resume .func:hover > div:not(:hover) {
+    opacity: 0.5;
+  }
+  
+  .resume .func h3 {
+    transition-duration: 0.3s;
+    margin-top: 0;
+  }
+  
+  .resume .func h3 i {
+    color: var(--darker-blue);
+    background: var(--orange);
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+  }
+  
+  .resume .func .skills-prog {
+    background: var(--darker-blue);
+    padding: 15px;
+  }
+  
+  .resume .func .skills-prog ul {
+    margin-left: 15px;
+  }
+  
+  .resume .func .skills-prog ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.3s;
+  }
+  
+  .resume .func .skills-prog ul li:hover {
+    color: var(--yellow);
+  }
+  
+  .resume .func .skills-prog ul li:hover .skills-bar .bar {
+    background: var(--yellow);
+    box-shadow: 0 0 0 1px var(--yellow);
+  }
+  
+  .resume .func .skills-prog ul li span {
+    display: block;
+    width: 120px;
+  }
+  
+  .resume .func .skills-prog ul li .skills-bar {
+    background: var(--white);
+    height: 2px;
+    width: calc(100% - 120px);
+    position: relative;
+    border-radius: 2px;
+  }
+  
+  .resume .func .skills-prog ul li .skills-bar .bar {
+    position: absolute;
+    top: -1px;
+    height: 4px;
+    background: var(--orange);
+    box-shadow: 0 0 0 var(--orange);
+    border-radius: 5px;
+  }
+  
+  .resume .func .skills-soft {
+    clear: both;
+    background: var(--darker-blue);
+    padding: 15px;
+    margin: 15px 0 0;
+  }
+  
+  .resume .func .skills-soft ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .resume .func .skills-soft ul li {
+    position: relative;
+  }
+  
+  .resume .func .skills-soft ul li:hover svg .cbar {
+    stroke: var(--yellow);
+    stroke-width: 4px;
+  }
+  
+  .resume .func .skills-soft ul li:hover span,
+  .resume .func .skills-soft ul li:hover small {
+    transform: scale(1.2);
+  }
+  
+  .resume .func .skills-soft ul li svg {
+    width: 95%;
+    fill: transparent;
+    transform: rotate(-90deg);
+  }
+  
+  .resume .func .skills-soft ul li svg circle {
+    stroke-width: 1px;
+    stroke: var(--white);
+  }
+  
+  .resume .func .skills-soft ul li svg .cbar {
+    stroke-width: 3px;
+    stroke: var(--orange);
+    stroke-linecap: round;
+  }
+  
+  .resume .func .skills-soft ul li span,
+  .resume .func .skills-soft ul li small {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 52%;
+    transition-duration: 0.3s;
+  }
+  
+  .resume .func .skills-soft ul li span {
+    top: 40%;
+  }
+  
+  .resume .func .interests {
+    background: var(--darker-blue);
+    margin: 15px 0 0;
+    padding: 15px;
+  }
+  
+  .resume .func .interests-items {
+    box-sizing: border-box;
+    padding: 0 0 15px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .resume .func .interests-items div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 85px;
+    border-radius: 50%;
+  }
+  
+  .resume .func .interests-items div:hover i {
+    transform: scale(1.2);
+  }
+  
+  .resume .func .interests-items div:hover span {
+    color: var(--yellow);
+    transition-duration: 0.3s;
+  }
+  
+  .resume .func .interests-items div i {
+    font-size: 45px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: var(--orange);
+    transition-duration: 0.3s;
+  }
+  
+  .resume .func .interests-items div span {
+    display: block;
+  }
