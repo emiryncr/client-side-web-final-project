@@ -6,4 +6,5 @@ In this project, the instructor gave us tasks and it was created according to th
 
 Live: https://emiryncr.github.io/client-side-web-final-project/
 
-  
+
+⚠️ **Warning:** This project uses basic CSS and does not include responsive design.
